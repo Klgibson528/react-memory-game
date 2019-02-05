@@ -14,14 +14,14 @@ class Card extends Component {
 
     render() {
         let memoryCardInnerClass = "MemoryCardInner"
-        if(this.state.isFlipped === true){
+        if(this.props.isFlipped === true){
             memoryCardInnerClass += " flipped"
         }
         return (
             <div className="MemoryCard" onClick={this.clickHandler.bind(this)}>
                 <div className={memoryCardInnerClass}>
                     <div className="MemoryCardBack"><img src="https://www.digitalcrafts.com/img/DigitalCrafts-Logo-Wrench.png" alt="DigitalCrafts Logo" /></div>
-                    <div className="MemoryCardFront">∆</div>
+                    <div className="MemoryCardFront">{this.props.symbol}</div>
                 </div>
             </div>
         )
