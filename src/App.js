@@ -33,25 +33,6 @@ function shuffle(a) {
   return a;
 }
 
-// function unflipCards(card1Index, card2Index) {
-//   let card1 = { ...this.state.deck[card1Index] }
-//   let card2 = { ...this.state.deck[card2Index] }
-//   card1.isFlipped = false
-//   card2.isFlipped = false
-
-//   let newDeck = this.state.deck.map((card, index) => {
-//     if (card1Index === index) {
-//       return card1
-//     }
-//     else if (card2Index === index) {
-//       return card2
-//     }
-//     else return card
-//   })
-
-//   this.setState({ deck: newDeck })
-// }
-
 
 class App extends Component {
   constructor(props) {
